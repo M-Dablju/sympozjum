@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Sympozjum Naukowe Szczecin</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="Strona internetowa Sympozjum Naukowego pt . Włóknienie płuc - diagnostyka i leczenie. Przeszczepianie płuc.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link href="styles.css" type="text/css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quantico&display=swap" rel="stylesheet">
+  </head>
+  <body>
+  <header>
+    <div class="logo">
+      <img class="logo-photo" src="/images/lungs.png" alt="Lungs Logo" height="75">
+      <h2>Sympozjum Naukowe pt . Włóknienie płuc - diagnostyka i leczenie. Przeszczepianie płuc.<br/><small>Szczecin - 15 Grudzień 2023</small></h2>
+    </div>
+    <nav>
+      <div class="button">
+        <a href="./rejestracja.html" title="Zarejestruj się">Rejestracja</a>
+      </div>
+      <div class="button">
+        <a href="#program" title="Program Sympozjum">Program</a>
+      </div>
+      <div class="button">
+        <a href="#miejsce-obrad" title="Miejsce Obrad">
+            <span>Miejsce</span>
+            <span>Obrad</span>
+        </a>
+    </div>
+    </nav>
+  </header>
+  <section class="main">
+    <hr>
+    <div class="main-place">
+      <div class="text">
+      <h3 class="about-title">Organizatorzy:</h3>
+      <p class="about-person">Klinika Chirurgii Klatki Piersiowej i Transplantacji Pomorskiego Uniwersytetu Medycznego SPWSZ lok. Szczecin-Zdunowo</p>
+      <br/>
+      <h3 class="about-title">Pod patronatem Rektora PUM</h3>
+      <p class="about-person">Prof. Dr hab. n. med. Bogusława Machalińskiego</p>
+
+      <h3>Pomorski Uniwersytet w Szczecinie</h3>
+    </div>
+    
+      <div class="image-container">
+        <img src="/images/pum.png" alt="PUM" title="Pomorski Uniwersytet Medyczny" class="image pum">
+      </div>
+    </div> 
+      <hr>
+
+  <h2 id="program">Program:</h2>
+  <p>Organizator: Klinika Chirurgii Klatki Piersiowej i Transplantacji PUM w Szczecinie</p>
+  <p>Hotel Radisson Blu 15 grudnia 2023 Szczecin 08:30 - 15:45</p>
+
+</section>
+  <div class="program-column">
+    <h3 class="wit">Wykładowcy i tematyka</h3>
+    <p class="about-title"><strong>Diagnosis and treatment of ILD</strong></p>
+    <p class="about-person">Wim Wuyts</p>
+
+    <p class="about-title"><strong>Diagnostyka IPF ze szczególnym uwzględnieniem kriobiopsji</strong></p>
+    <p class="about-person">Piotr Radwan - Rohrenschef</p>
+    
+    <p class="about-title"><strong>Program diagnostyki i leczenia IPF w Oddziale Pulmonologii Specjalistycznego Wojewódzkiego Szpitala Zespolonego w Szczecinie lok. Zdunowo</strong></p>
+    <p class="about-person">Małgorzata Noceń Piskorowska</p>
+
+    <p class="about-title"><strong>Lung transplantation for lung fibrosis: what type and what technique?</strong></p>
+    <p class="about-person">Dirk Raemdonck</p>
+    
+    <p class="about-title"><strong>Kwalifikacja chorych do przeszczepienia płuc z uwzględnieniem włóknienia płuc</strong></p>
+    <p class="about-person">Marek Ochman</p>
+    
+    <p class="about-title"><strong>Przeszczepienie płuc z powodu włóknienia płuc</strong></p>
+    <p class="about-person">Maciej Urlik</p>
+
+    <p class="about-title"><strong>Przeczepienie płuc z powodu IPAH</strong></p>
+    <p class="about-person">Tomasz Stącel</p>
+
+    <p class="about-title"><strong>Przeczepienia płuc z powodu włóknienia płuc - doświadczenia ośrodka szczecińskiego</strong></p>
+    <p class="about-person">Maria Piotrowska</p>
+    
+    <p class="about-title"><strong>Wyniki chirurgicznego leczenia raka płuca  na przestrzeni ostatnich 20 lat</strong></p>
+    <p class="about-person">Tadeusz Orłowski</p>
+    
+    <p class="about-title"><strong>Kriobiopsja w diagnostyce chorób opłucnej - doświadczenia własne</strong></p>
+    <p class="about-person">Jarosław Pieróg</p>
+  </div>
+  <hr>
+  <div class="main-place">
+    <div class="text">
+        <h2 id="miejsce-obrad">Miejsce Obrad:</h2>
+        <h3 class="about-title">Radisson Blu Hotel, Szczecin</h3>
+        <p class="about-person">Adres: Plac Rodła 10, 70-419 Szczecin</p>
+        <p>Telefon: (+48) 91 359 55 95</p>
+    </div>
+    <div class="image-container">
+        <img src="/images/radissonbluhotel.avif" alt="Radisson Hotel" title="Hotel Radisson Blu" class="image framed">
+    </div>
+  </div>
+
+  <hr>
+  <footer>
+    <small>&copy;2023 Mariusz Wójcik</small>
+    <div>
+      <a href="https://www.flaticon.com/free-icons/lung-cancer" target="_blank" title="lung cancer icons"><small>Lung icon created by Icon home - Flaticon</small></a>
+    </div>
+  </footer>
+  <script>
+    document.querySelector('.button a').addEventListener('click', function(e) {
+        e.preventDefault();
+
+        const targetId = this.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+
+        if (targetElement) {
+            const yOffset = targetElement.getBoundingClientRect().top + window.pageYOffset;
+            window.scrollTo({ top: yOffset, behavior: 'smooth' });
+        }
+    });
+</script>
+  </body>
+</html>
