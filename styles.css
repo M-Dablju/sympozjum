@@ -1,8 +1,12 @@
 body {
-    background-color: #a9c9ff;
-    background-image: linear-gradient(180deg,#a9c9ff 0,#ffbbec 100%);
+    background-color: #A9C9FF;
+    background-image: linear-gradient(180deg, #A9C9FF 0%, #FFBBEC 100%);
+    
+    
+    
+    
     min-height: 100vh;
-    font-family: 'Quantico', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .main {
@@ -79,6 +83,7 @@ h2 {
   */
 
 .button a {
+    margin-top: 5px;
     text-decoration: none;
     display: block;
 }
@@ -118,15 +123,14 @@ nav {
 }
 
 .image {
-    height: 400px; /* Adjust the height as needed */
-    width: auto;
+    height: auto; /* Adjust the height as needed */
     max-width: 100%;
 }
 
 .pum {
     height: 250px;
     width: auto;
-    padding-right: 20px;
+    max-width: 100%;
 }
 
 .main-place {
@@ -137,16 +141,19 @@ nav {
 }
 
 .text {
-    margin-right: 20px;
+    text-align: left; /* Set text alignment to the left */
+    margin-right: 200px; /* Reduce the right margin to push the content to the left */
     width: 70%; /* Adjust the width of the text container */
 }
+
 
 .image-container {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     padding: 20px;
-    width: 100%; /* Ensure it takes the full width for alignment */
+    max-width: 100%; /* Ensure it takes the full width for alignment */
+    height: auto;
 }
 
 .framed {
@@ -157,6 +164,7 @@ nav {
     outline: 1px solid #000;
     outline-offset: calc(-1 * var(--s));
     background: conic-gradient(from 90deg at 1px 1px, #0000 25%, #000 0);
+    width: 80%;
 }
 
 .wit {
@@ -187,5 +195,16 @@ nav {
 
     .program-column {
         flex: 100%;
+    }
+
+    .main-place {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text {
+        width: 100%; /* Full width on small screens */
+        margin-right: 0;
+        text-align: center;
     }
 }
