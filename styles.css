@@ -2,9 +2,6 @@ body {
     background-color: #A9C9FF;
     background-image: linear-gradient(180deg, #A9C9FF 0%, #FFBBEC 100%);
     
-    
-    
-    
     min-height: 100vh;
     font-family: 'Montserrat', sans-serif;
 }
@@ -58,6 +55,17 @@ h2 {
     background: conic-gradient(from 90deg at 1px 1px, #0000 25%, #000 0);
 }
 
+.button1{
+    padding: 20px;
+    margin: 0 10px;
+    --s: 3px; /* control the size */
+    padding: var(--s);
+    border: calc(2 * var(--s)) solid #0000;
+    outline: 1px solid #000;
+    outline-offset: calc(-1 * var(--s));
+    background: conic-gradient(from 90deg at 1px 1px, #0000 25%, #000 0);
+}
+
 /* BUTTON EDITING
 .button {
     background-color: #4CAF50; 
@@ -88,6 +96,12 @@ h2 {
     display: block;
 }
 
+.button1 a {
+    margin-top: 5px;
+    text-decoration: none;
+    display: block;
+}
+
 .button a span {
     display: block;
     text-align: center;
@@ -98,6 +112,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    padding 0 10px;
 }
 
 .program-column {
@@ -151,7 +166,7 @@ nav {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 20px;
+    padding: 0px;
     max-width: 100%; /* Ensure it takes the full width for alignment */
     height: auto;
 }
@@ -184,7 +199,8 @@ nav {
         text-align: center;
     }
 
-    .button {
+    .button,
+    .button1 {
         margin-bottom: 10px;
         margin-right: 0;
     }
@@ -204,7 +220,7 @@ nav {
 
     .text {
         width: 100%; /* Full width on small screens */
-        margin-right: 0;
+        margin-right: 0px;
         text-align: center;
     }
 }
