@@ -3,11 +3,14 @@ body {
     background-image: linear-gradient(180deg, #A9C9FF 0%, #FFBBEC 100%);
     
     min-height: 100vh;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;;
 }
 
 .main {
-    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 a {
@@ -34,6 +37,7 @@ header {
 .logo-photo {
     display: inline-block;
     margin-right: 10px;
+    margin-left: 10px;
 }
 
 h2 {
@@ -44,51 +48,28 @@ h2 {
     text-align: center;
 }
 
-.button{
-    padding: 20px;
-    margin: 0 10px;
-    --s: 3px; /* control the size */
-    padding: var(--s);
-    border: calc(2 * var(--s)) solid #0000;
-    outline: 1px solid #000;
-    outline-offset: calc(-1 * var(--s));
-    background: conic-gradient(from 90deg at 1px 1px, #0000 25%, #000 0);
-}
-
-.button1{
-    padding: 20px;
-    margin: 0 10px;
-    --s: 3px; /* control the size */
-    padding: var(--s);
-    border: calc(2 * var(--s)) solid #0000;
-    outline: 1px solid #000;
-    outline-offset: calc(-1 * var(--s));
-    background: conic-gradient(from 90deg at 1px 1px, #0000 25%, #000 0);
-}
-
-/* BUTTON EDITING
-.button {
-    background-color: #4CAF50; 
-    margin-right: 5px;
-    border: none;
+.button,
+.button1 {
+    background-color: #e1e9f8;
+    border: 2px solid #9eb9e9;
     color: white;
-    padding: 15px 32px;
+    padding: 5px 14px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    padding: 10px 24px;
-    border-radius: 8px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border-radius: 8px;
+}
+      
+.button:hover,
+.button1:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
-.button:hover {
-    background-color: white; 
-    color: white;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-  } 
-  */
 
 .button a {
     margin-top: 5px;
@@ -102,17 +83,12 @@ h2 {
     display: block;
 }
 
-.button a span {
-    display: block;
-    text-align: center;
-    margin-bottom: 1px;
-}
+
 
 nav {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    padding 0 10px;
 }
 
 .program-column {
@@ -120,7 +96,12 @@ nav {
     padding: 20px;
     border: 1px solid #ccc;
     margin: 10px;
-    background-color: #d5e4ff;
+    background-color: #e1e9f8;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .about-main {
@@ -134,7 +115,9 @@ nav {
 }
 
 .about-person {
-    margin-top: 0px;
+    margin-top: 5px;
+    color: darkcyan;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .image {
@@ -172,7 +155,6 @@ nav {
 }
 
 .framed {
-    margin: 0 10px;
     --s: 10px; /* control the size */
     padding: var(--s);
     border: calc(2 * var(--s)) solid #0000;
@@ -194,15 +176,20 @@ nav {
 
 
 @media screen and (max-width: 768px) {
+    
     header, footer {
         flex-direction: column;
         text-align: center;
     }
 
-    .button,
-    .button1 {
-        margin-bottom: 10px;
-        margin-right: 0;
+    .button, .button1 {
+        display: block; /* Display the buttons as block elements to stack them in one column */
+        width: auto; /* Reset the width to auto (optional) */
+    }
+    
+    nav {
+        flex-direction: column; /* Stack the buttons in a column */
+        align-items: center; /* Center the buttons horizontally */
     }
 
     .about-main {
@@ -211,6 +198,11 @@ nav {
 
     .program-column {
         flex: 100%;
+        text-align: center;
+    }
+
+    .main {
+        text-align: center;
     }
 
     .main-place {
@@ -223,4 +215,5 @@ nav {
         margin-right: 0px;
         text-align: center;
     }
+
 }
