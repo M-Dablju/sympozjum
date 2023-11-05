@@ -13,10 +13,19 @@ body {
     align-items: center;
 }
 
+.nomargin {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
 a {
     padding: 0 20px;
     margin: 0;
     margin-bottom: 5px;
+}
+
+.email {
+    padding: 0;
 }
 
 header, footer {
@@ -125,12 +134,21 @@ nav {
 
 .about-title {
     margin-bottom: 0px;
+    margin-top: 0px;
 }
 
 .about-person {
     margin-top: 5px;
+    margin-bottom: 5px;
     color: #880531;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.about-time {
+    margin-bottom: 0;
+    color: #880531;
+    font-weight: bold;
+    font-style: italic;
 }
 
 .image {
