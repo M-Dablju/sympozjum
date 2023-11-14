@@ -226,6 +226,10 @@ nav {
     position: absolute;
 }
 
+#mobile-link {
+    display: none; /* Initially hide on larger screens */
+}
+
 
 @media screen and (max-width: 768px) {
     
@@ -268,8 +272,14 @@ nav {
         text-align: center;
     }
 
-    .responsive-container iframe {
-        width: 90%; /* Adjust as needed for smaller screens */
+    #embedded-form {
+        display: none; /* Hide on smaller screens */
+    }
+
+    #mobile-link {
+        display: block; /* Show on smaller screens */
+        text-align: center; /* Center the link */
+        margin-top: 10px; /* Add some spacing */
     }
 
 }
