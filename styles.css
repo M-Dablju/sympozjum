@@ -211,6 +211,21 @@ nav {
     text-align:  center;
 }
 
+.responsive-container {
+    overflow: hidden;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio (change as needed) */
+    position: relative;
+    height: 0;
+}
+
+.responsive-container iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
 
 @media screen and (max-width: 768px) {
     
@@ -251,6 +266,10 @@ nav {
         width: 100%; /* Full width on small screens */
         margin-right: 0px;
         text-align: center;
+    }
+
+    .responsive-container iframe {
+        width: 90%; /* Adjust as needed for smaller screens */
     }
 
 }
