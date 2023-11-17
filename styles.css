@@ -132,6 +132,19 @@ nav {
     align-items: center;
 }
 
+.sponsors-column {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin: 10px;
+    background-color: #ffffff;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .about-main {
     display: flex;
     flex-wrap: wrap;
@@ -257,6 +270,11 @@ nav {
         text-align: center;
     }
 
+    .sponsors-column {
+        flex: 100%;
+        text-align: center;
+    }
+
     .main {
         text-align: center;
     }
@@ -280,6 +298,11 @@ nav {
         display: block; /* Show on smaller screens */
         text-align: center; /* Center the link */
         margin-top: 10px; /* Add some spacing */
+    }
+
+    .image-container img {
+        height: auto;
+        max-width: 100%;
     }
 
 }
