@@ -204,6 +204,15 @@ nav {
     height: auto;
 }
 
+.image-container2 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px;
+    max-width: 100%; /* Ensure it takes the full width for alignment */
+    height: auto;
+}
+
 .framed {
     --s: 10px; /* control the size */
     padding: var(--s);
@@ -300,13 +309,14 @@ nav {
         margin-top: 10px; /* Add some spacing */
     }
 
-    .image-container {
+    .image-container2 {
         justify-content: center; /* Center the images on smaller screens */
     }
 
-    .image-container img {
+    .image-container2 img {
         height: auto;
         max-width: 60%;
     }
 
 }
+ 
